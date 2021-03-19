@@ -12,24 +12,23 @@
 </head>
 <body>
     <div class="jumbotron jumbotron-fluid">
-        <h1 class="display-4">Employee Reimbursment System</h1>
+        <h1 class="display-4">Employee Reimbursement System</h1>
         <p class="lead">
             Please Log in to continue
         </p>
         <hr class="my-4">
-        <p>
-            <form method="get" action="" onsubmit="userLogin(event.preventDefault())">
-                <div>
+        <form>
+            <div>
                 <label for="UNInput">Username:</label>
                 <input type="text" id="UNInput">
-                </div>
-                <div>
-                    <label for="PWInput">Password:</label>
-                    <input type="text" id="PWInput">
-                </div>
-                <button class="btn btn-primary" type="submit">Login</button>
-            </form>
-        </p>
+            </div>
+            <div>
+                <label for="PWInput">Password:</label>
+                <input type="password" id="PWInput">
+            </div>
+            <a class="btn btn-primary" onclick="userLogin()">Login</a>
+        </form>
+        <div id="warningText"><p></p></div>
     </div>
 
     <script src="./scripts/index.js"></script>
